@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+        <title>title</title>
+        <link rel="stylesheet" type="text/css" href="../css/api.css" />
+        <style>
+            html,
+            body {
+                height: 100%;
+                background-color: #f0f0f0;
+            }
+            
+            body {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-flex-flow: column;
+                flex-flow: column;
+                width: 100%;
+            }
+            
+            .place-holder {
+                -webkit-box-flex: 1;
+                -webkit-flex: 1;
+                flex: 1;
+                width: 100%;
+                font-size: 14px;
+                color: #888;
+                text-align: center;
+                line-height: 44px;
+            }
+            
+            .footer {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-orient: horizontal;
+                -webkit-flex-flow: row;
+                flex-flow: row;
+                width: 100%;
+                height: 44px;
+                background-color: #fff;
+                border-top: 1px solid #ccc;
+            }
+            
+            .footer .menu {
+                -webkit-box-flex: 1;
+                -webkit-flex: 1;
+                flex: 1;
+                box-sizing: border-box;
+                padding-top: 28px;
+                padding-bottom: 6px;
+                height: 44px;
+                font-size: 10px;
+                color: #545253;
+                text-align: center;
+                background-size: 20px 20px;
+                background-position: center 6px;
+                background-repeat: no-repeat;
+            }
+            
+            .footer .home {
+                background-image: url(../image/footer/home.png);
+            }
+            
+            .footer .home.active {
+                background-image: url(../image/footer/home_act.png);
+            }
+            
+            .footer .video {
+                background-image: url(../image/footer/video.png);
+            }
+            
+            .footer .video.active {
+                background-image: url(../image/footer/video_act.png);
+            }
+            
+            .footer .theme {
+                background-image: url(../image/footer/theme.png);
+            }
+            
+            .footer .theme.active {
+                background-image: url(../image/footer/theme_act.png);
+            }
+            
+            .footer .mine {
+                background-image: url(../image/footer/mine.png);
+            }
+            
+            .footer .mine.active {
+                background-image: url(../image/footer/mine_act.png);
+            }
+        </style>
+    </head>
+
+    <body>
+        <section class="place-holder">
+            这是内容区域，可以使用 frame、frameGroup 等进行覆盖
+        </section>
+        <footer class="footer">
+            <div class="menu home active">首页</div>
+            <div class="menu video">视频</div>
+            <div class="menu theme">发现</div>
+            <div class="menu mine">我的</div>
+        </footer>
+    </body>
+
+</html>

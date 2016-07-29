@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+        <title>title</title>
+        <link rel="stylesheet" type="text/css" href="../css/api.css" />
+        <style>
+            html,
+            body {
+                height: 100%;
+                background-color: #f0f0f0;
+            }
+            
+            .menu-panel {
+                position: relative;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-orient: horizontal;
+                -webkit-flex-flow: row;
+                flex-flow: row;
+                width: 100%;
+                /* 可在apiready中根据窗口宽度动态改变 height 值
+                 * 脚本内改变 height 值需要带 px 单位
+                 */
+                height: 180px;
+            }
+            
+            .menu-panel .one {
+                box-sizing: border-box;
+                padding-top: 8px;
+                padding-left: 8px;
+                margin-right: 1px;
+                width: 45%;
+                height: 100%;
+                color: #444;
+                font-size: 24px;
+                font-weight: bolder;
+                text-align: left;
+                line-height: 32px;
+                background-color: #fff;
+                background-repeat: no-repeat;
+                background-image: url(../image/one.jpg);
+                background-size: 75% auto;
+                background-position: right bottom;
+            }
+            
+            .menu-panel .one .price {
+                font-size: 32px;
+                color: #fa0;
+            }
+            
+            .menu-panel .right {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-flex-flow: column;
+                flex-flow: column;
+                -webkit-box-flex: 1;
+                -webkit-flex: 1;
+                flex: 1;
+                margin-left: 1px;
+                height: 100%;
+            }
+            
+            .menu-panel .right .two {
+                -webkit-box-flex: 1;
+                -webkit-flex: 1;
+                flex: 1;
+                box-sizing: border-box;
+                padding-top: 8px;
+                padding-right: 8px;
+                margin-bottom: 1px;
+                color: #444;
+                font-size: 16px;
+                font-weight: bolder;
+                text-align: right;
+                background-color: #fff;
+                background-repeat: no-repeat;
+                background-image: url(../image/two.jpg);
+                background-size: auto 100%;
+                background-position: -10px 5px;
+            }
+            
+            .menu-panel .right .three {
+                -webkit-box-flex: 1;
+                -webkit-flex: 1;
+                flex: 1;
+                box-sizing: border-box;
+                padding-top: 8px;
+                padding-right: 8px;
+                margin-top: 1px;
+                color: #444;
+                font-size: 16px;
+                font-weight: bolder;
+                text-align: right;
+                background-color: #fff;
+                background-repeat: no-repeat;
+                background-image: url(../image/three.jpg);
+                background-size: auto 100%;
+                background-position: -20px 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <section id="menuPanel" class="menu-panel">
+            <div id="one" class="one">
+                甜橙特卖
+                <br/>
+                <span class="price">￥9.8</span>
+            </div>
+            <div class="right">
+                <div class="two">海鲜特卖</div>
+                <div class="three">KTV免单</div>
+            </div>
+        </section>
+    </body>
+
+</html>
